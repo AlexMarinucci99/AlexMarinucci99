@@ -1,0 +1,40 @@
+COMANDI GIT
+
+*DA LOCALE A REMOTO*
+git status	#per vedere quali file sono stati modificati
+
+git add .		#per aggiungere tutti i file modificati
+git add nome_file	#per apportare le modifiche, 1 file alla volta
+
+git commit -m "messaggio"	#per committare
+
+git push	#per caricare le modifiche sul repository remoto
+
+* * * * * * * * * *
+
+*DA REMOTO A LOCALE*
+git fetch origin	#per recuperare le modifiche dal repository remoto
+
+git merge origin/nome_del_tuo_branch	#per unire le modifiche al repository lcoale
+
+#oppure
+
+git pull	#fa entrambe le 2 istruzioni
+
+* * * * * * * * * *
+
+*SE SI SBAGLIA A MODIFICARE FILE*
+git restore nome_file		#per annullare le modifiche se non è ancora stato fatto git add
+
+git restore --staged nome_file	#per annullare le modifiche se è stato fatto git add
+
+git reset --hard HEAD~1		#per annullare se è stato fatto anche il commit
+
+* * * * * * * * * *
+
+*ELIMINARE FILE*
+git rm nome_del_file
+
+git commit -m "Rimosso il file"
+
+git push origin nome_del_tuo_branch

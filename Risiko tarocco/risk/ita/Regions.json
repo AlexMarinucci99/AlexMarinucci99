@@ -1,0 +1,30 @@
+[
+    {
+        "name": "cassolnovo",
+        "adjRegions": [
+            "novara",
+            "mortara",
+            "vigevano"
+        ]
+    },
+    {
+        "name": "vigevano",
+        "adjRegions": [
+            "mortara",
+            "cassolnovo"
+        ]
+    },
+    {
+        "name": "mortara",
+        "adjRegions": [
+            "vigevano",
+            "cassolnovo"
+        ]
+    },
+    {
+        "name": "novara",
+        "adjRegions": [
+            "cassolnovo"
+        ]
+    }
+]
