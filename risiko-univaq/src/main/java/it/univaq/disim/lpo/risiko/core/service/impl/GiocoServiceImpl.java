@@ -178,113 +178,196 @@ public class GiocoServiceImpl implements GiocoService {
         territorioMap.get("Alberta").aggiungiTerritorioAdiacente(territorioMap.get("Territori del Nord-Ovest"));
         territorioMap.get("Alberta").aggiungiTerritorioAdiacente(territorioMap.get("Ontario"));
         territorioMap.get("Alberta").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Occidentali"));
+        territorioMap.get("Alberta").aggiungiTerritorioAdiacente(territorioMap.get("Alaska"));
 
         territorioMap.get("Territori del Nord-Ovest").aggiungiTerritorioAdiacente(territorioMap.get("Groenlandia"));
         territorioMap.get("Territori del Nord-Ovest").aggiungiTerritorioAdiacente(territorioMap.get("Ontario"));
+        territorioMap.get("Territori del Nord-Ovest").aggiungiTerritorioAdiacente(territorioMap.get("Alberta"));
+        territorioMap.get("Territori del Nord-Ovest").aggiungiTerritorioAdiacente(territorioMap.get("Alaska"));
 
         territorioMap.get("Ontario").aggiungiTerritorioAdiacente(territorioMap.get("Quebec"));
         territorioMap.get("Ontario").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Orientali"));
         territorioMap.get("Ontario").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Occidentali"));
+        territorioMap.get("Ontario").aggiungiTerritorioAdiacente(territorioMap.get("Alberta"));
+        territorioMap.get("Ontario").aggiungiTerritorioAdiacente(territorioMap.get("Territori del Nord-Ovest"));
+        territorioMap.get("Ontario").aggiungiTerritorioAdiacente(territorioMap.get("Groenlandia"));
 
         territorioMap.get("Quebec").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Orientali"));
         territorioMap.get("Quebec").aggiungiTerritorioAdiacente(territorioMap.get("Groenlandia"));
+        territorioMap.get("Quebec").aggiungiTerritorioAdiacente(territorioMap.get("Ontario"));
 
         territorioMap.get("Groenlandia").aggiungiTerritorioAdiacente(territorioMap.get("Islanda"));
+        territorioMap.get("Groenlandia").aggiungiTerritorioAdiacente(territorioMap.get("Quebec"));
+        territorioMap.get("Groenlandia").aggiungiTerritorioAdiacente(territorioMap.get("Ontario"));
+        territorioMap.get("Groenlandia").aggiungiTerritorioAdiacente(territorioMap.get("Territori del Nord-Ovest"));
 
         territorioMap.get("Stati Uniti Occidentali").aggiungiTerritorioAdiacente(territorioMap.get("America Centrale"));
+        territorioMap.get("Stati Uniti Occidentali").aggiungiTerritorioAdiacente(territorioMap.get("Alberta"));
+        territorioMap.get("Stati Uniti Occidentali").aggiungiTerritorioAdiacente(territorioMap.get("Ontario"));
+        territorioMap.get("Stati Uniti Occidentali").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Orientali"));     
+
         territorioMap.get("Stati Uniti Orientali").aggiungiTerritorioAdiacente(territorioMap.get("America Centrale"));
+        territorioMap.get("Stati Uniti Orientali").aggiungiTerritorioAdiacente(territorioMap.get("Ontario"));
+        territorioMap.get("Stati Uniti Orientali").aggiungiTerritorioAdiacente(territorioMap.get("Quebec"));
+        territorioMap.get("Stati Uniti Orientali").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Occidentali"));
 
         territorioMap.get("America Centrale").aggiungiTerritorioAdiacente(territorioMap.get("Venezuela"));
+        territorioMap.get("America Centrale").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Occidentali"));
+        territorioMap.get("America Centrale").aggiungiTerritorioAdiacente(territorioMap.get("Stati Uniti Orientali"));
 
         territorioMap.get("Venezuela").aggiungiTerritorioAdiacente(territorioMap.get("Brasile"));
         territorioMap.get("Venezuela").aggiungiTerritorioAdiacente(territorioMap.get("Perù"));
+        territorioMap.get("Venezuela").aggiungiTerritorioAdiacente(territorioMap.get("America Centrale"));
 
         territorioMap.get("Perù").aggiungiTerritorioAdiacente(territorioMap.get("Brasile"));
         territorioMap.get("Perù").aggiungiTerritorioAdiacente(territorioMap.get("Argentina"));
+        territorioMap.get("Perù").aggiungiTerritorioAdiacente(territorioMap.get("Venezuela"));
 
         territorioMap.get("Brasile").aggiungiTerritorioAdiacente(territorioMap.get("Argentina"));
         territorioMap.get("Brasile").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Nord"));
+        territorioMap.get("Brasile").aggiungiTerritorioAdiacente(territorioMap.get("Perù"));
+        territorioMap.get("Brasile").aggiungiTerritorioAdiacente(territorioMap.get("Venezuela"));
 
         territorioMap.get("Argentina").aggiungiTerritorioAdiacente(territorioMap.get("Perù"));
+        territorioMap.get("Argentina").aggiungiTerritorioAdiacente(territorioMap.get("Brasile"));
 
         territorioMap.get("Africa del Nord").aggiungiTerritorioAdiacente(territorioMap.get("Congo"));
         territorioMap.get("Africa del Nord").aggiungiTerritorioAdiacente(territorioMap.get("Egitto"));
         territorioMap.get("Africa del Nord").aggiungiTerritorioAdiacente(territorioMap.get("Europa Meridionale"));
         territorioMap.get("Africa del Nord").aggiungiTerritorioAdiacente(territorioMap.get("Europa Occidentale"));
+        territorioMap.get("Africa del Nord").aggiungiTerritorioAdiacente(territorioMap.get("Brasile"));
+        territorioMap.get("Africa del Nord").aggiungiTerritorioAdiacente(territorioMap.get("Africa Orientale"));
 
         territorioMap.get("Egitto").aggiungiTerritorioAdiacente(territorioMap.get("Africa Orientale"));
         territorioMap.get("Egitto").aggiungiTerritorioAdiacente(territorioMap.get("Medio Oriente"));
         territorioMap.get("Egitto").aggiungiTerritorioAdiacente(territorioMap.get("Europa Meridionale"));
+        territorioMap.get("Egitto").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Nord"));
         
         territorioMap.get("Africa Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Congo"));
         territorioMap.get("Africa Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Sud"));
         territorioMap.get("Africa Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Madagascar"));
+        territorioMap.get("Africa Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Egitto"));
+        territorioMap.get("Africa Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Nord"));
         
         territorioMap.get("Africa del Sud").aggiungiTerritorioAdiacente(territorioMap.get("Congo"));
         territorioMap.get("Africa del Sud").aggiungiTerritorioAdiacente(territorioMap.get("Madagascar"));
+        territorioMap.get("Africa del Sud").aggiungiTerritorioAdiacente(territorioMap.get("Africa Orientale"));
+
+        territorioMap.get("Congo").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Nord"));
+        territorioMap.get("Congo").aggiungiTerritorioAdiacente(territorioMap.get("Africa Orientale"));
+        territorioMap.get("Congo").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Sud"));
+
+        territorioMap.get("Madagascar").aggiungiTerritorioAdiacente(territorioMap.get("Africa Orientale"));
+        territorioMap.get("Madagascar").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Sud"));
         
         territorioMap.get("Europa Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Europa Meridionale"));
         territorioMap.get("Europa Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Europa Settentrionale"));
         territorioMap.get("Europa Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Gran Bretagna"));
+        territorioMap.get("Europa Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Nord"));
         
         territorioMap.get("Europa Meridionale").aggiungiTerritorioAdiacente(territorioMap.get("Europa Settentrionale"));
         territorioMap.get("Europa Meridionale").aggiungiTerritorioAdiacente(territorioMap.get("Ucraina"));
         territorioMap.get("Europa Meridionale").aggiungiTerritorioAdiacente(territorioMap.get("Medio Oriente"));
+        territorioMap.get("Europa Meridionale").aggiungiTerritorioAdiacente(territorioMap.get("Egitto"));
+        territorioMap.get("Europa Meridionale").aggiungiTerritorioAdiacente(territorioMap.get("Africa del Nord"));
+        territorioMap.get("Europa Meridionale").aggiungiTerritorioAdiacente(territorioMap.get("Europa Occidentale"));
         
         territorioMap.get("Europa Settentrionale").aggiungiTerritorioAdiacente(territorioMap.get("Ucraina"));
         territorioMap.get("Europa Settentrionale").aggiungiTerritorioAdiacente(territorioMap.get("Gran Bretagna"));
         territorioMap.get("Europa Settentrionale").aggiungiTerritorioAdiacente(territorioMap.get("Scandinavia"));
+        territorioMap.get("Europa Settentrionale").aggiungiTerritorioAdiacente(territorioMap.get("Europa Meridionale"));
+        territorioMap.get("Europa Settentrionale").aggiungiTerritorioAdiacente(territorioMap.get("Europa Occidentale"));
         
         territorioMap.get("Gran Bretagna").aggiungiTerritorioAdiacente(territorioMap.get("Islanda"));
         territorioMap.get("Gran Bretagna").aggiungiTerritorioAdiacente(territorioMap.get("Scandinavia"));
+        territorioMap.get("Gran Bretagna").aggiungiTerritorioAdiacente(territorioMap.get("Europa Settentrionale"));
+        territorioMap.get("Gran Bretagna").aggiungiTerritorioAdiacente(territorioMap.get("Europa Occidentale"));
         
         territorioMap.get("Scandinavia").aggiungiTerritorioAdiacente(territorioMap.get("Ucraina"));
         territorioMap.get("Scandinavia").aggiungiTerritorioAdiacente(territorioMap.get("Islanda"));
+        territorioMap.get("Scandinavia").aggiungiTerritorioAdiacente(territorioMap.get("Gran Bretagna"));
+        territorioMap.get("Scandinavia").aggiungiTerritorioAdiacente(territorioMap.get("Europa Settentrionale"));
         
         territorioMap.get("Ucraina").aggiungiTerritorioAdiacente(territorioMap.get("Medio Oriente"));
         territorioMap.get("Ucraina").aggiungiTerritorioAdiacente(territorioMap.get("Urali"));
         territorioMap.get("Ucraina").aggiungiTerritorioAdiacente(territorioMap.get("Afghanistan"));
+        territorioMap.get("Ucraina").aggiungiTerritorioAdiacente(territorioMap.get("Europa Meridionale"));
+        territorioMap.get("Ucraina").aggiungiTerritorioAdiacente(territorioMap.get("Europa Settentrionale"));
+        territorioMap.get("Ucraina").aggiungiTerritorioAdiacente(territorioMap.get("Scandinavia"));
+
+        territorioMap.get("Islanda").aggiungiTerritorioAdiacente(territorioMap.get("Groenlandia"));
+        territorioMap.get("Islanda").aggiungiTerritorioAdiacente(territorioMap.get("Gran Bretagna"));
+        territorioMap.get("Islanda").aggiungiTerritorioAdiacente(territorioMap.get("Scandinavia"));
         
         territorioMap.get("Urali").aggiungiTerritorioAdiacente(territorioMap.get("Afghanistan"));
         territorioMap.get("Urali").aggiungiTerritorioAdiacente(territorioMap.get("Siberia"));
         territorioMap.get("Urali").aggiungiTerritorioAdiacente(territorioMap.get("Cina"));
+        territorioMap.get("Urali").aggiungiTerritorioAdiacente(territorioMap.get("Ucraina"));
         
         territorioMap.get("Siberia").aggiungiTerritorioAdiacente(territorioMap.get("Cina"));
         territorioMap.get("Siberia").aggiungiTerritorioAdiacente(territorioMap.get("Jacuzia"));
         territorioMap.get("Siberia").aggiungiTerritorioAdiacente(territorioMap.get("Mongolia"));
         territorioMap.get("Siberia").aggiungiTerritorioAdiacente(territorioMap.get("Čita"));
+        territorioMap.get("Siberia").aggiungiTerritorioAdiacente(territorioMap.get("Urali"));
         
         territorioMap.get("Jacuzia").aggiungiTerritorioAdiacente(territorioMap.get("Čita"));
         territorioMap.get("Jacuzia").aggiungiTerritorioAdiacente(territorioMap.get("Kamchatka"));
+        territorioMap.get("Jacuzia").aggiungiTerritorioAdiacente(territorioMap.get("Siberia"));
         
         territorioMap.get("Kamchatka").aggiungiTerritorioAdiacente(territorioMap.get("Čita"));
         territorioMap.get("Kamchatka").aggiungiTerritorioAdiacente(territorioMap.get("Mongolia"));
         territorioMap.get("Kamchatka").aggiungiTerritorioAdiacente(territorioMap.get("Giappone"));
+        territorioMap.get("Kamchatka").aggiungiTerritorioAdiacente(territorioMap.get("Alaska"));
+        territorioMap.get("Kamchatka").aggiungiTerritorioAdiacente(territorioMap.get("Jacuzia"));
         
         territorioMap.get("Čita").aggiungiTerritorioAdiacente(territorioMap.get("Mongolia"));
+        territorioMap.get("Čita").aggiungiTerritorioAdiacente(territorioMap.get("Siberia"));
+        territorioMap.get("Čita").aggiungiTerritorioAdiacente(territorioMap.get("Jacuzia"));
+        territorioMap.get("Čita").aggiungiTerritorioAdiacente(territorioMap.get("Kamchatka"));
         
         territorioMap.get("Mongolia").aggiungiTerritorioAdiacente(territorioMap.get("Giappone"));
         territorioMap.get("Mongolia").aggiungiTerritorioAdiacente(territorioMap.get("Cina"));
+        territorioMap.get("Mongolia").aggiungiTerritorioAdiacente(territorioMap.get("Siberia"));
+        territorioMap.get("Mongolia").aggiungiTerritorioAdiacente(territorioMap.get("Čita"));
+        territorioMap.get("Mongolia").aggiungiTerritorioAdiacente(territorioMap.get("Kamchatka"));
         
         territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("Siam"));
         territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("India"));
         territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("Medio Oriente"));
         territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("Afghanistan"));
+        territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("Urali"));
+        territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("Mongolia"));
+        territorioMap.get("Cina").aggiungiTerritorioAdiacente(territorioMap.get("Siberia"));
         
         territorioMap.get("India").aggiungiTerritorioAdiacente(territorioMap.get("Siam"));
         territorioMap.get("India").aggiungiTerritorioAdiacente(territorioMap.get("Medio Oriente"));
+        territorioMap.get("India").aggiungiTerritorioAdiacente(territorioMap.get("Cina"));
         
         territorioMap.get("Medio Oriente").aggiungiTerritorioAdiacente(territorioMap.get("Afghanistan"));
+        territorioMap.get("Medio Oriente").aggiungiTerritorioAdiacente(territorioMap.get("Ucraina"));
+        territorioMap.get("Medio Oriente").aggiungiTerritorioAdiacente(territorioMap.get("Europa Meridionale"));
+        territorioMap.get("Medio Oriente").aggiungiTerritorioAdiacente(territorioMap.get("Egitto"));
+        territorioMap.get("Medio Oriente").aggiungiTerritorioAdiacente(territorioMap.get("India"));
+        territorioMap.get("Medio Oriente").aggiungiTerritorioAdiacente(territorioMap.get("Cina"));
         
         territorioMap.get("Siam").aggiungiTerritorioAdiacente(territorioMap.get("Indonesia"));
+        territorioMap.get("Siam").aggiungiTerritorioAdiacente(territorioMap.get("India"));
+        territorioMap.get("Siam").aggiungiTerritorioAdiacente(territorioMap.get("Cina"));
         
         territorioMap.get("Indonesia").aggiungiTerritorioAdiacente(territorioMap.get("Nuova Guinea"));
         territorioMap.get("Indonesia").aggiungiTerritorioAdiacente(territorioMap.get("Australia Occidentale"));
+        territorioMap.get("Indonesia").aggiungiTerritorioAdiacente(territorioMap.get("Siam"));
         
         territorioMap.get("Nuova Guinea").aggiungiTerritorioAdiacente(territorioMap.get("Australia Occidentale"));
         territorioMap.get("Nuova Guinea").aggiungiTerritorioAdiacente(territorioMap.get("Australia Orientale"));
+        territorioMap.get("Nuova Guinea").aggiungiTerritorioAdiacente(territorioMap.get("Indonesia"));
         
         territorioMap.get("Australia Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Australia Occidentale"));
+        territorioMap.get("Australia Orientale").aggiungiTerritorioAdiacente(territorioMap.get("Nuova Guinea"));
+
+        territorioMap.get("Australia Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Indonesia"));
+        territorioMap.get("Australia Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Nuova Guinea"));
+        territorioMap.get("Australia Occidentale").aggiungiTerritorioAdiacente(territorioMap.get("Australia Orientale"));
 
         return continenti;
     }
