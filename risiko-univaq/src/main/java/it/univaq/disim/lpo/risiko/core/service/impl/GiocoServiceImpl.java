@@ -733,11 +733,11 @@ public class GiocoServiceImpl implements GiocoService {
                 }
                 break;
 
-            case "Conquistare 18 territori e occupare ognuno con almeno 2 armate":
+            case "Conquistare 30 territori e occupare ognuno con almeno 2 armate":
                 long territoriConAlmenoDueArmate = giocatore.getTerritori_controllati().stream()
                     .filter(t -> t.getNumeroArmate() >= 2)
                     .count();
-                if (territoriConAlmenoDueArmate >= 18) {
+                if (territoriConAlmenoDueArmate >= 30) {
                     System.out.println("Giocatore " + giocatore.getNome() + " ha conquistato 18 territori con almeno 2 armate ciascuno e vince la partita!");
                     scriviLog("Giocatore " + giocatore.getNome() + " ha vinto la partita con l'obiettivo: " + obiettivo.getDescrizione());
                     return true;
