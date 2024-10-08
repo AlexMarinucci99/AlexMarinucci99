@@ -512,7 +512,7 @@ public class GiocoServiceImpl implements GiocoService {
     }
 
    
-    public void distribuzioneInizialeArmate(List<Giocatore> giocatori, int armatePerGiocatore) {
+    /*public void distribuzioneInizialeArmate(List<Giocatore> giocatori, int armatePerGiocatore) {
         boolean armateDaDistribuire = false;
         int armatePerTurno = calcolaArmatePerGiocatore(giocatori.size());
         Set<String> coloriScelti = new HashSet<>();
@@ -589,8 +589,60 @@ public class GiocoServiceImpl implements GiocoService {
             }
         }
     }
+*/
+    public void distribuzioneInizialeArmate(List<Giocatore> giocatori, int armatePerGiocatore) {
+        Set<String> coloriScelti = new HashSet<>();
 
-    
+        // Prima fase: Ogni giocatore posiziona una armata su ogni territorio
+        for (Giocatore giocatore : giocatori) {
+            if (giocatore.getColore() == null) {
+                scegliColore(giocatore, coloriScelti);
+            }
+
+            for (Territorio territorio : giocatore.getTerritori_controllati()) {
+                territorio.aggiungiArmate(1);
+                giocatore.incrementaTotaleArmate(1);
+                scriviLog("Giocatore " + giocatore.getNome() + " ha posizionato 1 armata su " + territorio.getNome());
+            }
+        }
+
+        // Seconda fase: Distribuire le armate rimanenti
+        for (Giocatore giocatore : giocatori) {
+            int armateRimanenti = armatePerGiocatore - giocatore.getTotaleArmate();
+
+            while (armateRimanenti > 0) {
+                System.out.println("Giocatore " + giocatore.getNome() + ", hai " + armateRimanenti + " armate da distribuire.");
+                System.out.println("Seleziona il territorio dove posizionare un'armata:");
+                for (int j = 0; j < giocatore.getTerritori_controllati().size(); j++) {
+                    System.out.println(j + ". " + giocatore.getTerritori_controllati().get(j).getNome());
+                }
+
+                int indiceTerritorio = -1;
+                boolean territorioValido = false;
+
+                while (!territorioValido) {
+                    try {
+                        indiceTerritorio = SingletonMain.getInstance().readInteger();
+
+                        if (indiceTerritorio >= 0 && indiceTerritorio < giocatore.getTerritori_controllati().size()) {
+                            territorioValido = true;
+                        } else {
+                            System.out.println("Territorio non valido. Riprovare.");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Errore nella selezione del territorio. Riprovare.");
+                    }
+                }
+
+                Territorio territorioSelezionato = giocatore.getTerritori_controllati().get(indiceTerritorio);
+                territorioSelezionato.aggiungiArmate(1);
+                giocatore.incrementaTotaleArmate(1);
+                armateRimanenti--;
+                scriviLog("Giocatore " + giocatore.getNome() + " ha posizionato 1 armata su " + territorioSelezionato.getNome());
+            }
+        }
+    }
+
     private void scegliColore(Giocatore giocatore, Set<String> coloriScelti) {
         System.out.println("\nGiocatore " + giocatore.getNome() + ", scegli un colore per le tue armate:");
         for (String colore : coloriDisponibili) {

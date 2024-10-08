@@ -61,7 +61,7 @@ public class Territorio implements Serializable{
     }
 
     public void aggiungiArmate(int armate) {
-        this.armate = armate;
+        this.armate += armate;
     }
     public void rimuoviArmate(int numero) {
         if (numero <= this.armate) {
