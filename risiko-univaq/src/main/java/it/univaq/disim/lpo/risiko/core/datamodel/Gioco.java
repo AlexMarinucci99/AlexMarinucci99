@@ -11,17 +11,33 @@ public class Gioco implements Serializable{
     private String fase;
     private List<Giocatore> giocatori;
     private Mappa mappa;
-    private int faccia_dado;
+    private List<Giocatore> ordineGiocatori;
     private List<CartaTerritorio> carteTerritorio;
     private List<CartaObiettivo> carteObiettivo;
+    private boolean armateDistribuite;
 
 	public Gioco(String fase, List<Giocatore> giocatori, Mappa mappa, int faccia_dado, List<CartaTerritorio> carteTerritorio, List<CartaObiettivo> carteObiettivo) {
         this.fase = fase;	
         setGiocatori(giocatori); 
         this.mappa = mappa;
-        this.faccia_dado = faccia_dado;
+        this.armateDistribuite = false;
         this.carteTerritorio = carteTerritorio;
         this.carteObiettivo = carteObiettivo;
+        this.ordineGiocatori = giocatori;
+    }
+	public boolean isArmateDistribuite() {
+        return armateDistribuite;
+    }
+
+    public void setArmateDistribuite(boolean armateDistribuite) {
+        this.armateDistribuite = armateDistribuite;
+    }
+	public List<Giocatore> getOrdineGiocatori() {
+        return ordineGiocatori;
+    }
+
+    public void setOrdineGiocatori(List<Giocatore> ordineGiocatori) {
+        this.ordineGiocatori = ordineGiocatori;
     }
 
     public String getFase() {
@@ -52,13 +68,7 @@ public class Gioco implements Serializable{
         this.mappa = mappa;
     }
 
-    public int getFaccia_dado() {
-        return this.faccia_dado;
-    }
-
-    public void setFaccia_dado(int faccia_dado) {
-        this.faccia_dado = faccia_dado;
-    }
+   
 
     public List<CartaTerritorio> getCarteTerritorio() {
         return this.carteTerritorio;

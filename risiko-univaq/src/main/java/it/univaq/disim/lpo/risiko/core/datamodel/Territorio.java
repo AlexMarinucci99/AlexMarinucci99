@@ -77,18 +77,13 @@ public class Territorio implements Serializable{
     public void aggiungiTerritorioAdiacente(Territorio territorio) {
         if (!this.territoriAdiacenti.contains(territorio)) {
             this.territoriAdiacenti.add(territorio);
-            territorio.aggiungiTerritorioAdiacenteSingolo(this); // Assicura bidirezionalità
+            if (!territorio.getTerritoriAdiacenti().contains(this)) {
+                territorio.getTerritoriAdiacenti().add(this);
+            }
         }
     }
 
-    // Metodo privato per evitare ricorsione infinita
-    private void aggiungiTerritorioAdiacenteSingolo(Territorio territorio) {
-        if (!this.territoriAdiacenti.contains(territorio)) {
-            this.territoriAdiacenti.add(territorio);
-        }
-    }
-
-   
+ 
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

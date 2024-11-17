@@ -1,7 +1,7 @@
 package it.univaq.disim.lpo.risiko.core.service.impl;
 
 import it.univaq.disim.lpo.risiko.core.service.TerritorioService;
-import it.univaq.disim.lpo.risiko.core.datamodel.Giocatore;
+
 import it.univaq.disim.lpo.risiko.core.datamodel.Territorio;
 
 public class TerritorioServiceImpl implements TerritorioService {
@@ -16,12 +16,7 @@ public class TerritorioServiceImpl implements TerritorioService {
     }
 
    
-    public void aggiungiProprietario(Territorio territorio, Giocatore proprietario) {
-        territorio.setGiocatore(proprietario);
-    }
-
- 
-    public void rimuoviProprietario(Territorio territorio) {
+   
       
-    }
+    
 }

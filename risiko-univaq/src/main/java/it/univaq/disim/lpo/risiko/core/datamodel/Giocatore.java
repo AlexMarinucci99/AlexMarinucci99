@@ -1,5 +1,6 @@
 package it.univaq.disim.lpo.risiko.core.datamodel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import java.io.Serializable;
@@ -16,11 +17,27 @@ public class Giocatore implements Serializable{
     public Giocatore(String nome, int armate, List<Territorio> territori_controllati,int risultatoLancioDado, int totaleArmate) {
         this.nome = nome;
         this.armate = armate;
-        this.territori_controllati = territori_controllati;
+        this.territori_controllati = (territori_controllati != null) ? territori_controllati : new ArrayList<>();
         this.risultatoLancioDado = risultatoLancioDado;
         this.colore = null; 	
         this.totaleArmate = totaleArmate;
     }
+   
+    
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Giocatore giocatore = (Giocatore) o;
+        return nome != null && nome.equalsIgnoreCase(giocatore.nome);
+    }
+
+
+    public int hashCode() {
+        return nome != null ? nome.toLowerCase().hashCode() : 0;
+    }
+
+
     public Giocatore(String nome, int armate, List<Territorio> territori_controllati, int totaleArmate) {
         this(nome, armate, territori_controllati, 0, totaleArmate); // Valore predefinito per risultatoLancioDado
     }

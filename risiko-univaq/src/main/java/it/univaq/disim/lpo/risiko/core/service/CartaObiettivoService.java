@@ -6,6 +6,9 @@ import it.univaq.disim.lpo.risiko.core.datamodel.*;
 public interface CartaObiettivoService {
     List<CartaObiettivo> generaObiettiviCasuali(int numeroObiettivi);
     
-    void assegnaObiettiviCasuali(List<Giocatore> giocatori, List<CartaObiettivo> obiettiviCasuali);
+    static void assegnaObiettiviCasuali(List<Giocatore> giocatori, List<CartaObiettivo> obiettiviCasuali) {
+		
+		
+	}
     
 }

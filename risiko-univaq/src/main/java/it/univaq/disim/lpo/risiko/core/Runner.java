@@ -3,34 +3,33 @@ package it.univaq.disim.lpo.risiko.core;
 import it.univaq.disim.lpo.risiko.core.service.*;
 import it.univaq.disim.lpo.risiko.core.service.impl.*;
 
+import java.util.List;
+
 import it.univaq.disim.lpo.risiko.core.datamodel.*;
 
 
 public class Runner {
 	public static void main(String[] args) {
         GiocoService giocoService = new GiocoServiceImpl();
+        GiocatoreService giocatoreService = new GiocatoreServiceImpl();
         
         boolean running = true;
         while (running) {
         try {
         	Gioco gioco = giocoService.inizializzaPartita();
-            int numeroGiocatori = gioco.getGiocatori().size();
+        	 List<Giocatore> ordineGiocatori = giocoService.getOrdineGiocatori(gioco);
         
      
-            // Calcolare il numero di armate per giocatore
-            int armatePerGiocatore = giocoService.calcolaArmatePerGiocatore(numeroGiocatori);
-
-            // Distribuzione iniziale delle armate
-            giocoService.distribuzioneInizialeArmate(gioco.getGiocatori(), armatePerGiocatore);
-
-            // Stampa i dettagli del gioco inizializzato
-            for (Giocatore giocatore : gioco.getGiocatori()) {
-                //System.out.println("Giocatore " + giocatore.getNome() + " ha ricevuto " + giocatore.getArmate() + " armate.");
-                System.out.println("Colore delle armate: " + giocatore.getColore());
-                //da mette un log per le armate
-        
-            }
-           //fica
+        	// Distribuisci le armate iniziali solo se non sono già state distribuite
+             if (!gioco.isArmateDistribuite()) {
+                 int numeroGiocatori = ordineGiocatori.size();
+                 int armatePerGiocatore = giocatoreService.calcolaArmatePerGiocatore(numeroGiocatori);
+                 giocatoreService.distribuzioneInizialeArmate(gioco.getGiocatori(), armatePerGiocatore);
+                 
+                 // Imposta il flag per evitare la ridistribuzione
+                 gioco.setArmateDistribuite(true);
+             }
+      
 
             System.out.println("Sta per iniziare la partita!");
             
@@ -38,8 +37,8 @@ public class Runner {
             boolean partitaInCorso = true;
             
             while (partitaInCorso) {
-                for (Giocatore giocatore : gioco.getGiocatori()) {
-                	partitaInCorso = giocoService.TurnoGiocatore(giocatore, gioco);
+                for (Giocatore giocatore : ordineGiocatori) {
+                    partitaInCorso = giocoService.TurnoGiocatore(giocatore, gioco);
                     if (!partitaInCorso) {
                         break;
                     }

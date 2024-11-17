@@ -1,7 +1,14 @@
 package it.univaq.disim.lpo.risiko.core.service;
 
-public class InizializzaPartitaException extends Exception{
-    public InizializzaPartitaException() {
+import it.univaq.disim.lpo.risiko.core.RisikoException;
+
+public class InizializzaPartitaException extends RisikoException{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public InizializzaPartitaException() {
         super();
     }
 
