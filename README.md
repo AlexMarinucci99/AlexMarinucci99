@@ -29,26 +29,6 @@ Currently, I'm diving deep into:
 
 ---
 
-## 🔥 GitHub Stats:
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AlexMarinucci99&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AlexMarinucci99&theme=gruvbox&hide_border=false" />
-</p>
-
-🔹 **Most used languages:**  
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlexMarinucci99&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true&layout=compact" />
-</p>
-
----
-
-## 🏆 GitHub Achievements:
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AlexMarinucci99&theme=gruvbox&no-frame=false&no-bg=true&margin-w=4" />
-</p>
-
----
 
 ## ✨ Inspirational Dev Quote:
 > *"Code is like humor. When you have to explain it, it’s bad."*  
@@ -67,9 +47,9 @@ Currently, I'm diving deep into:
 
 ## 📫 Let's Connect:
 <p align="center">
-  📧 **Email:** marinuccialessandro99@gmail.com  
-  📍 **Location:** Italy 🇮🇹  
-  🌐 **Portfolio:** [Coming Soon!]  
+  📧 Email: marinuccialessandro99@gmail.com  
+  📍 Location: Italy 🇮🇹  
+  🌐 Portfolio: [Coming Soon!]  
 </p>
 
 <p align="center">
