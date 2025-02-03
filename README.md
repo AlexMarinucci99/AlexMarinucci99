@@ -29,18 +29,6 @@ I love keeping up-to-date with **cutting-edge technologies** that inspire me. Fe
 
 ---
 
-## 📊 GitHub Stats:
-🔹 **My contributions & activity:**  
-
-| Stats | Streak |
-|-------|--------|
-| ![](https://github-readme-stats.vercel.app/api?username=AlexMarinucci99&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true) | ![](https://github-readme-streak-stats.herokuapp.com/?user=AlexMarinucci99&theme=gruvbox&hide_border=false) |
-
-🔹 **Most used languages:**  
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AlexMarinucci99&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
----
-
 ## ✨ Inspirational Dev Quote:
 > *"Code is like humor. When you have to explain it, it’s bad."*  
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
