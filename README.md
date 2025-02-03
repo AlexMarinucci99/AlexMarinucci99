@@ -1,7 +1,7 @@
 # 🌟 Welcome to My GitHub!
 
 ## 🚀 About Me:
-Hi there! I'm a **Computer Science student** passionate about software development and low-level programming.  
+Hi there! I'm a **Computer Science student** passionate about software development and high-level programming.  
 Currently, I'm diving deep into:
 
 - **Java & JavaFX** for high-level development.
@@ -41,11 +41,6 @@ I love keeping up-to-date with **cutting-edge technologies** that inspire me. Fe
 
 ---
 
-## 🏆 GitHub Achievements:
-![](https://github-profile-trophy.vercel.app/?username=AlexMarinucci99&theme=gruvbox&no-frame=false&no-bg=true&margin-w=4)
-
----
-
 ## ✨ Inspirational Dev Quote:
 > *"Code is like humor. When you have to explain it, it’s bad."*  
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
@@ -58,7 +53,7 @@ I love keeping up-to-date with **cutting-edge technologies** that inspire me. Fe
 ---
 
 ## 📫 Let's Connect:
-📧 **Email:** _your.email@example.com_  
+📧 **Email:** marinuccialessandro99@gmail.com 
 📍 **Location:** Italy 🇮🇹  
 🌐 **Portfolio:** [Coming Soon!]  
 
