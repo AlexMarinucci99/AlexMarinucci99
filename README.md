@@ -52,9 +52,7 @@ Currently, I'm diving deep into:
   🌐 Portfolio: [Coming Soon!]  
 </p>
 
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=AlexMarinucci99&icon=9&color=8" />
-</p>
+
 
 ---
 
