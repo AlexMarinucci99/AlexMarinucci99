@@ -11,7 +11,7 @@
 Hi there! I'm a **Computer Science student** passionate about software development and high-level programming.  
 Currently, I'm diving deep into:
 
-- 🚀 **Java & JavaFX** for high-level development.
+- 🚀 **Java,JavaFX,Kotlin,Dart** for high-level development.
 - 🔧 **C, M68K, and MIPS** for low-level programming.
 - 🗄 **Database management** with MySQL & Oracle.
 - 🌐 **Web Technologies** including HTML5.
