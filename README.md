@@ -1,58 +1,64 @@
-<h1 align="center">🌟 Welcome to My GitHub! 🌟</h1>
+# Alex Marinucci
 
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="500" height="300">
-</p>
+Computer Science student based in Italy, focused on Android development, full-stack web applications and software engineering fundamentals.
 
----
-
-## 🚀 About Me:
-
-Hi there! I'm a **Computer Science student** passionate about software development and high-level programming.  
-Currently, I'm diving deep into:
-
-- 🚀 **Java,JavaFX,Kotlin,Dart** for high-level development.
-- 🔧 **C, M68K, and MIPS** for low-level programming.
-- 🗄 **Database management** with MySQL & Oracle.
-- 🌐 **Web Technologies** including HTML5.
-
-💡 I love keeping up-to-date with **cutting-edge technologies** that inspire me. Feel free to explore my repositories!  
+I build practical projects using Kotlin, Java, React, Firebase and SQL, with attention to clean structure, readability and maintainability.
 
 ---
 
-## 🛠 Tech Stack:
-**Languages & Technologies I work with:**  
+## Main Skills
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,c,html,mysql,oracle,latex,apache" />
-</p>
-
----
-
-
-## ✨ Inspirational Dev Quote:
-> *"Code is like humor. When you have to explain it, it’s bad."*  
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" />
-</p>
+- Android development with Kotlin and Mobile Application with Flutter.
+- Object-oriented programming with Java
+- Frontend development with React, HTML and CSS
+- Backend and data management with PHP, Firebase and MySQL
+- Git, GitHub and project documentation
 
 ---
 
-## 🔝 Top Contributed Repositories:
-<p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=AlexMarinucci99&limit=5&theme=dark&combine_all_yearly_contributions=true" />
-</p>
+## Featured Projects
+
+### SafeDriveMonitor
+Mobile application focused on driving safety monitoring.
+
+**Tech:** Kotlin, Android  
+**Focus:** mobile development, data monitoring, UI design
 
 ---
 
-## 📫 Let's Connect:
-<p align="center">
-  📧 Email: marinuccialessandro99@gmail.com  
-  📍 Location: Italy 🇮🇹  
-  🌐 Portfolio: [Coming Soon!]  
-</p>
+### AppMeteoRadar
+Android weather application with radar/weather data features.
 
-
+**Tech:** Kotlin  
+**Focus:** API integration, mobile UI, data visualization
 
 ---
 
+### Risiko-Master
+Java implementation of a strategy board game inspired by Risiko.
+
+**Tech:** Java  
+**Focus:** object-oriented programming, game logic, modular design
+
+---
+
+### MasterDump
+Web application/backend project built with PHP.
+
+**Tech:** PHP, MySQL  
+**Focus:** backend logic, data management, web development
+
+---
+
+## Currently Learning
+
+- Advanced Android development
+- Clean architecture and software design patterns
+- Full-stack application development
+- Cloud and backend integration
+
+---
+
+## Contact
+
+Email: marinucialessandro99@gmail.com
