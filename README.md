@@ -21,8 +21,7 @@ I build practical projects using Kotlin, Java, React, Firebase and SQL, with att
 ### SafeDriveMonitor
 Mobile application focused on driving safety monitoring.
 
-**Tech:** Kotlin, Android  
-**Focus:** mobile development, data monitoring, UI design
+**Tech:** Java,JavFx  
 
 ---
 
