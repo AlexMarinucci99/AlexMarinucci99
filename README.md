@@ -54,7 +54,7 @@ I'm particularly interested in opportunities where I can contribute to real soft
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)](https://firebase.google.com/)
 
-[![Flutter CI](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml)
+[![Flutter CI](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml/badge.svg?branch=main)](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml)
 
 [![Explore the Project](https://img.shields.io/badge/EXPLORE_THE_PROJECT-View_Repository-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AlexMarinucci99/JiVaio)
 
