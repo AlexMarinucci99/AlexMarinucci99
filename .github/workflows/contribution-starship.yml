@@ -104,7 +104,7 @@ jobs:
             fi
 
             git switch --orphan output
-            git rm -rf .
+  
           fi
 
           cp "$RUNNER_TEMP/starship/"*.svg .
