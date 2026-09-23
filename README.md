@@ -190,6 +190,56 @@ The publicly accessible repository is provided for portfolio presentation and te
 
 ---
 
+<!-- CONTRIBUTION ANIMATION -->
+
+<div align="center">
+
+## GitHub Contributions
+
+<p>
+  <em>
+    Every contribution tells a story.<br>
+    Every challenge is another opportunity to grow.
+  </em>
+</p>
+
+<br>
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)"
+    srcset="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-dark-static.svg"
+  />
+
+  <source
+    media="(prefers-reduced-motion: reduce)"
+    srcset="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-light-static.svg"
+  />
+
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-dark.svg"
+  />
+
+  <img
+    src="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-light.svg"
+    alt="CONTRIBUTION — IT TOO SHALL PASS. Animated starships travel across Alessandro Marinucci's GitHub contribution calendar."
+    width="100%"
+  />
+</picture>
+
+<br>
+
+<sub>
+  An animated journey through my GitHub contributions.
+</sub>
+
+</div>
+
+<!-- END CONTRIBUTION ANIMATION -->
+
+---
+
 ## Other Selected Projects
 
 ### [MeteoRadar](https://github.com/AlexMarinucci99/AppMeteoRadar)
