@@ -1,0 +1,124 @@
+
+name: Generate Contribution Starships
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '23 */12 * * *'
+
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/contribution-starship.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-starships
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Generate animated contributions
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout animation generator
+        uses: actions/checkout@v4
+        with:
+          repository: arthurianresolve/arthurianresolve
+          ref: 69a6edf518bc744e344ac3dafda307d22c9b2c2e
+          path: upstream
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Generate my contribution animation
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          node upstream/scripts/generate-starship.mjs \
+            --username AlexMarinucci99 \
+            --out "$RUNNER_TEMP/starship" \
+            --snapshot "$RUNNER_TEMP/starship/contributions.json"
+
+      - name: Verify generated SVGs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for theme in dark light; do
+            test -s "$RUNNER_TEMP/starship/github-contribution-grid-starship-${theme}.svg"
+            test -s "$RUNNER_TEMP/starship/github-contribution-grid-starship-${theme}-static.svg"
+          done
+
+      - name: Upload generated images
+        uses: actions/upload-artifact@v4
+        with:
+          name: contribution-starships
+          path: ${{ runner.temp }}/starship/*.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    name: Publish contribution animation
+    needs: generate
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout my profile repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Download generated images
+        uses: actions/download-artifact@v4
+        with:
+          name: contribution-starships
+          path: ${{ runner.temp }}/starship
+
+      - name: Publish SVGs to output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git ls-remote --exit-code --heads origin output > /dev/null; then
+            git fetch --no-tags origin output
+            git switch --detach FETCH_HEAD
+          else
+            status=$?
+
+            if [ "$status" -ne 2 ]; then
+              exit "$status"
+            fi
+
+            git switch --orphan output
+            git rm -rf .
+          fi
+
+          cp "$RUNNER_TEMP/starship/"*.svg .
+
+          git add -- github-contribution-grid-starship-*.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+
+          git \
+            -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m "Update animated GitHub contributions"
+
+          git push origin HEAD:refs/heads/output
