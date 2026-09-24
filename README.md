@@ -229,11 +229,6 @@ The publicly accessible repository is provided for portfolio presentation and te
 </picture>
 
 <br>
-
-<sub>
-  An animated journey through my GitHub contributions.
-</sub>
-
 </div>
 
 <!-- END CONTRIBUTION ANIMATION -->
