@@ -61,6 +61,10 @@ A Flutter mobile application for public transport in L'Aquila, featuring interac
 - **[MasterRent](https://github.com/AlexMarinucci99/MasterRent)** — Full-stack university housing platform using PHP and MySQL.
 - **[SafeDriveMonitor](https://github.com/AlexMarinucci99/SafeDriveMonitor)** — JavaFX application for driving safety assessments and management.
 
+### Beyond Public Repositories
+
+Some of my projects are kept private due to confidentiality, privacy and intellectual property considerations.
+
 ---
 
 <!-- CONTRIBUTION ANIMATION -->
