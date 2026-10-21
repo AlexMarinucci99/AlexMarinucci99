@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: arthurianresolve/arthurianresolve
-          ref: 69a6edf518bc744e344ac3dafda307d22c9b2c2e
+          ref: 1a307f6d820379e5964ee41a81a429223b620883
           path: upstream
           persist-credentials: false
 
