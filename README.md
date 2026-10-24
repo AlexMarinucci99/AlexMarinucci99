@@ -29,9 +29,9 @@
 
 | Area | Technologies |
 | --- | --- |
-| **Languages** | Java · Kotlin · Dart · PHP · JavaScript · SQL |
+| **Languages** | Java · Kotlin · Dart · PHP · JavaScript · SQL · JavaFX |
 | **Mobile & Web** | Flutter · Jetpack Compose · HTML · CSS |
-| **Data & Services** | Firebase · MySQL |
+| **Data & Services** | Firebase · MySQL · GTFS |
 | **Tools** | Git · GitHub Actions |
 
 ---
