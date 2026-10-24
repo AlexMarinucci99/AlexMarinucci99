@@ -1,14 +1,28 @@
 
 <div align="center">
 
-# Alessandro Marinucci
+<picture>
+  <source
+    media="(prefers-reduced-motion: reduce)"
+    srcset="./assets/banner/alex-banner-static.png"
+  />
+  <img
+    src="./assets/banner/alex-banner-final.gif"
+    alt="Alessandro Marinucci — Full-Stack Developer. Ultron transforms into a corrupted human Vision."
+    width="100%"
+  />
+</picture>
 
-### Computer Science Student | Mobile & Full-Stack Developer
+<p>
+  Computer Science student at the <strong>University of L'Aquila</strong>, passionate about building practical software with clean architecture, maintainable code and thoughtful user experiences.
+</p>
 
-Computer Science student at the **University of L'Aquila**, passionate about building practical software with clean architecture, maintainable code and thoughtful user experiences.
-
-[![GitHub](https://img.shields.io/badge/GitHub-AlexMarinucci99-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AlexMarinucci99)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marinucialessandro99@gmail.com)
+<a href="https://github.com/AlexMarinucci99">
+  <img src="https://img.shields.io/badge/GitHub-AlexMarinucci99-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub: AlexMarinucci99" />
+</a>
+<a href="mailto:marinucialessandro99@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Contact by email" />
+</a>
 
 </div>
 
@@ -87,17 +101,14 @@ Some of my projects are kept private due to confidentiality, privacy and intelle
     media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)"
     srcset="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-dark-static.svg"
   />
-
   <source
     media="(prefers-reduced-motion: reduce)"
     srcset="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-light-static.svg"
   />
-
   <source
     media="(prefers-color-scheme: dark)"
     srcset="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-dark.svg"
   />
-
   <img
     src="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-light.svg"
     alt="CONTRIBUTION — IT TOO SHALL PASS. Animated starships travel across Alessandro Marinucci's GitHub contribution calendar."
