@@ -8,21 +8,18 @@
   />
   <img
     src="./assets/banner/alex-banner-final.gif"
-    alt="Alessandro Marinucci — Full-Stack Developer. Ultron transforms into a corrupted human Vision."
+    alt="Alessandro Marinucci — Full-Stack Developer"
     width="100%"
   />
 </picture>
 
 <p>
-  Computer Science student at the <strong>University of L'Aquila</strong>, passionate about building practical software with clean architecture, maintainable code and thoughtful user experiences.
+  Computer Science student at the <strong>University of L'Aquila</strong>, focused on web and mobile application development.<br>
+  I build software with an emphasis on clear architecture, maintainable code, and practical user experience.
 </p>
 
-<a href="https://github.com/AlexMarinucci99">
-  <img src="https://img.shields.io/badge/GitHub-AlexMarinucci99-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub: AlexMarinucci99" />
-</a>
-<a href="mailto:marinucialessandro99@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Contact by email" />
-</a>
+<a href="https://github.com/AlexMarinucci99">GitHub</a> ·
+<a href="mailto:marinucialessandro99@gmail.com">Email</a>
 
 </div>
 
@@ -30,54 +27,42 @@
 
 ## Tech Stack
 
-<div align="center">
-
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-</div>
+| Area | Technologies |
+| --- | --- |
+| **Languages** | Java · Kotlin · Dart · PHP · JavaScript · SQL |
+| **Mobile & Web** | Flutter · Jetpack Compose · HTML · CSS |
+| **Data & Services** | Firebase · MySQL |
+| **Tools** | Git · GitHub Actions |
 
 ---
 
-## Featured Project — JiVaio
+## Featured Project
+
+### [JiVaio](https://github.com/AlexMarinucci99/JiVaio)
 
 <div align="center">
-
-<a href="https://github.com/AlexMarinucci99/JiVaio">
-  <img src="https://raw.githubusercontent.com/AlexMarinucci99/JiVaio/main/assets/brandlogoname/jivaio_logo_name.png" alt="JiVaio" width="320">
-</a>
-
-**Making urban public transport easier to navigate.**
-
-A Flutter mobile application for public transport in L'Aquila, featuring interactive maps, geolocation, Firebase authentication and GTFS-derived transit data.
-
-**Flutter · Dart · Firebase · MVVM · GitHub Actions**
-
-[![Flutter CI](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml/badge.svg?branch=main)](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml)
-
-[**Explore JiVaio →**](https://github.com/AlexMarinucci99/JiVaio)
-
+  <a href="https://github.com/AlexMarinucci99/JiVaio">
+    <img src="https://raw.githubusercontent.com/AlexMarinucci99/JiVaio/main/assets/brandlogoname/jivaio_logo_name.png" alt="JiVaio project logo" width="280" />
+  </a>
 </div>
+
+**A mobile application for navigating public transport in L'Aquila.**
+
+Built with Flutter, JiVaio brings together interactive maps, geolocation, Firebase authentication, and GTFS-derived transit data to make local transport information easier to access.
+
+**Stack:** Flutter · Dart · Firebase · MVVM · GitHub Actions
+
+[View repository](https://github.com/AlexMarinucci99/JiVaio) · [CI workflow](https://github.com/AlexMarinucci99/JiVaio/actions/workflows/flutter-ci.yml)
 
 ---
 
 ## Selected Projects
 
-- **[MeteoRadar](https://github.com/AlexMarinucci99/AppMeteoRadar)** — Native Android weather app built with Kotlin, Jetpack Compose and Google Maps.
-- **[MasterRent](https://github.com/AlexMarinucci99/MasterRent)** — Full-stack university housing platform using PHP and MySQL.
-- **[SafeDriveMonitor](https://github.com/AlexMarinucci99/SafeDriveMonitor)** — JavaFX application for driving safety assessments and management.
+- **[MeteoRadar](https://github.com/AlexMarinucci99/AppMeteoRadar)** — Native Android weather application developed with Kotlin and Jetpack Compose, featuring Google Maps integration.
+- **[MasterRent](https://github.com/AlexMarinucci99/MasterRent)** — Web platform for university housing management, built with PHP and MySQL.
+- **[SafeDriveMonitor](https://github.com/AlexMarinucci99/SafeDriveMonitor)** — JavaFX desktop application for driving safety assessments and management.
 
-### Beyond Public Repositories
-
-Some of my projects are kept private due to confidentiality, privacy and intellectual property considerations.
+*Additional projects are not publicly available due to confidentiality, privacy, or intellectual property requirements.*
 
 ---
 
@@ -87,14 +72,7 @@ Some of my projects are kept private due to confidentiality, privacy and intelle
 
 ## GitHub Contributions
 
-<p>
-  <em>
-    Every contribution tells a story.<br>
-    Every challenge is another opportunity to grow.
-  </em>
-</p>
-
-<br>
+<p>Development activity and contributions across my repositories.</p>
 
 <picture>
   <source
@@ -111,12 +89,11 @@ Some of my projects are kept private due to confidentiality, privacy and intelle
   />
   <img
     src="https://raw.githubusercontent.com/AlexMarinucci99/AlexMarinucci99/output/github-contribution-grid-starship-light.svg"
-    alt="CONTRIBUTION — IT TOO SHALL PASS. Animated starships travel across Alessandro Marinucci's GitHub contribution calendar."
+    alt="Animated starships moving across Alessandro Marinucci's GitHub contribution calendar"
     width="100%"
   />
 </picture>
 
-<br>
 </div>
 
 <!-- END CONTRIBUTION ANIMATION -->
